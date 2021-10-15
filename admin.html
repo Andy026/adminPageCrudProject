@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Agregar metas-->
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <section>
+        <h1 class="text-center display-2 my-5">Productos</h1>
+        <article>
+          <form id="formProducto">
+            <div class="mb-3">
+              <label for="codigo" class="form-label"
+                >Código único de producto:</label
+              >
+              <input type="text" class="form-control" id="codigo" required />
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="mb-3">
+              <label for="producto" class="form-label"
+                >Nombre de producto:</label
+              >
+              <input type="text" class="form-control" id="producto" required/>
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="mb-3">
+              <label for="descripcion" class="form-label">Descripción:</label>
+              <input type="text" class="form-control" id="descripcion" required/>
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="mb-3">
+              <label for="url" class="form-label">Imagen URL:</label>
+              <input type="text" class="form-control" id="url" required/>
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
+            </div>
+            <div class="alert alert-danger d-none" role="alert" id="msjAlerta">
+              Debe completar todos los datos marcados
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
+        </article>
+      </section>
+      <section>
+        <h2 class="display-3 text-center">Tabla de productos</h2>
+        <hr />
+        <button class="btn btn-primary my-3" id="btnAgregar">Nuevo</button>
+        <div class="table-responsive">
+          <table class="table table-dark table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Cod</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">URL</th>
+                <th scope="col">Acciones</th>
+              </tr>
+              <tr>
+                <th scope="row">Una</th>
+                <td>Prueba</td>
+                <td>Para probar</td>
+                <td>Pruebas</td>
+                <td>
+                  <button class="btn btn-warning" onclick="prepararEdicionProducto()">Editar</button>
+                  <button class="btn btn-danger" onclick="borrarProducto()">Borrar</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Una</th>
+                <td>Prueba</td>
+                <td>Para probar</td>
+                <td>Pruebas</td>
+                <td>
+                  <button class="btn btn-warning" onclick="prepararEdicionProducto()">Editar</button>
+                  <button class="btn btn-danger" onclick="borrarProducto()">Borrar</button>
+                </td>
+              </tr>
+            </thead>
+            <tbody id="tablaProductos"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="js/admin.js"></script>
+  </body>
+</html>
