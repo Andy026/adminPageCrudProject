@@ -6,6 +6,7 @@
 # ¿Cómo leer el código?
 
 Puede leer el código aquí mismo en **GitHub** o ejecutar este repositorio en  tu editor de código favorito y reemplazar los archivos .js a conveniencia.
+(En caso de usar **VisualCodeStudio** se aconseja usar la extensión *LiveServer*).
 
 ## Autor de la página:
 **Andrés Uriel Garcia.**
