@@ -15,44 +15,44 @@
       <section>
         <h1 class="text-center display-2 my-5">Productos</h1>
         <article>
-          <form id="formProducto">
+          <form class="bg-secondary py-4 px-3 rounded my-4" id="formProducto">
             <div class="mb-3">
-              <label for="codigo" class="form-label"
+              <label for="codigo" class="form-label text-light"
                 >Código único de producto:</label
               >
-              <input type="text" class="form-control" id="codigo" required />
-              <div class="invalid-feedback">Este campo es obligatorio.</div>
+              <input type="text" class="form-control rounded-pill border-dark border-1" id="codigo" required />
+              <div class="invalid-feedback text-white">Este campo es obligatorio.</div>
             </div>
             <div class="mb-3">
-              <label for="producto" class="form-label"
+              <label for="producto" class="form-label text-light"
                 >Nombre de producto:</label
               >
-              <input type="text" class="form-control" id="producto" required/>
-              <div class="invalid-feedback">Este campo es obligatorio.</div>
+              <input type="text" class="form-control rounded-pill border-dark border-1" id="producto" required/>
+              <div class="invalid-feedback text-white">Este campo es obligatorio.</div>
             </div>
             <div class="mb-3">
-              <label for="descripcion" class="form-label">Descripción:</label>
-              <input type="text" class="form-control" id="descripcion" required/>
-              <div class="invalid-feedback">Este campo es obligatorio.</div>
+              <label for="descripcion" class="form-label text-light">Descripción:</label>
+              <input type="text" class="form-control rounded-pill border-dark border-1" id="descripcion" required/>
+              <div class="invalid-feedback text-white">Este campo es obligatorio.</div>
             </div>
             <div class="mb-3">
-              <label for="url" class="form-label">Imagen URL:</label>
-              <input type="text" class="form-control" id="url" required/>
-              <div class="invalid-feedback">Este campo es obligatorio.</div>
+              <label for="url" class="form-label text-light">Imagen URL:</label>
+              <input type="text" class="form-control rounded-pill border-dark border-1" id="url" required/>
+              <div class="invalid-feedback text-white">Este campo es obligatorio.</div>
             </div>
             <div class="alert alert-danger d-none" role="alert" id="msjAlerta">
               Debe completar todos los datos marcados
             </div>
-            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="submit" class="btn btn-secondary rounded-pill border">Guardar</button>
           </form>
         </article>
       </section>
       <section>
         <h2 class="display-3 text-center">Tabla de productos</h2>
         <hr />
-        <button class="btn btn-primary my-3" id="btnAgregar">Nuevo</button>
+        <button class="btn btn-outline-secondary rounded-pill my-3" id="btnAgregar">Nuevo</button>
         <div class="table-responsive">
-          <table class="table table-dark table-hover">
+          <table class="table table-dark rounded">
             <thead>
               <tr>
                 <th scope="col">Cod</th>

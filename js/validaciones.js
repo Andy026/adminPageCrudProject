@@ -3,21 +3,21 @@ export function validarCampoRequerido(input) {
   console.log(input.value);
   if (input.value.trim().length > 0 && input.value.trim().length >= 3) {
     console.log("el dato es correcto");
-    input.className = "form-control is-valid";
+    input.className = "form-control rounded-pill border-1 is-valid";
     return true;
   } else {
     console.log("el dato es erroneo");
-    input.className = "form-control is-invalid";
+    input.className = "form-control rounded-pill border-1 is-invalid";
     return false;
   }
 }
 
 export function validarCodigo(input) {
   if (input.value.trim() != "" && input.value.trim().length >= 3) {
-    input.className = "form-control is-valid";
+    input.className = "form-control rounded-pill border-1 is-valid";
     return true;
   } else {
-    input.className = "form-control is-invalid";
+    input.className = "form-control rounded-pill border-1 is-invalid";
     return false;
   }
 }
@@ -28,10 +28,10 @@ export function validarUrl(input) {
     input.value.trim() != "" &&
     patron.test(input.value.trim(input.value.trim()))
   ) {
-    input.className = "form-control is-valid";
+    input.className = "form-control rounded-pill border-1 is-valid";
     return true;
   } else {
-    input.className = "form-control is-invalid";
+    input.className = "form-control rounded-pill border-1 is-invalid";
     return false;
   }
 }

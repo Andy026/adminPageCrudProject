@@ -116,7 +116,7 @@ function limpiarFormulario() {
   //limpia los value de los elementos del form
   formulario.reset();
   //limpiar las clases de cada elemento del form
-  codigo.className = "form-control";
+  codigo.className = "form-control rounded-pill border-dark border-1";
   //terminar de limpiar los inputs
   productoExistente = false;
 }
